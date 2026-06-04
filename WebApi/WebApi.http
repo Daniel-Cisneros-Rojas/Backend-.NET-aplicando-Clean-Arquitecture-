@@ -1,0 +1,43 @@
+@WebApi_HostAddress = http://localhost:5234
+//esta parte sirve para probar el endpoint de la api, en este caso se esta probando el endpoint de obtener una persona por su id, se esta utilizando un id de ejemplo que es 00000000-0000-0000-0000-000000000000, y se esta indicando que se espera una respuesta en formato json.
+GET {{WebApi_HostAddress}}/api/persons/e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f
+Accept: application/json
+
+###
+POST {{WebApi_HostAddress}}/api/persons
+Content-Type: application/json
+
+{
+  "code": "ABC124",
+  "firstName": "David",
+  "lastName": "Doe",
+  "email": "david.rae@example.com",
+  "phoneNumber": "1234567890"
+}
+
+###
+
+GET {{WebApi_HostAddress}}/api/persons/
+Accept: application/json
+
+###
+
+PUT {{WebApi_HostAddress}}/api/persons/e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f
+Content-Type: application/json 
+
+{
+  "id": "e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f",
+  "firstName": "Actualizado",
+  "lastName": "Doe",
+  "email": "david.rae@example.com",
+  "phoneNumber": "1234563330"
+}
+
+###
+
+  DELETE {{WebApi_HostAddress}}/api/persons/e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f
+
+###
+
+  GET {{WebApi_HostAddress}}/api/persons/code/ABC123
+Accept: application/json
