@@ -1,0 +1,17 @@
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Data.deps.json
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Data.runtimeconfig.json
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Data.dll
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Data.pdb
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Domain.dll
+D:\Documents\Net_proyectos\MyApp\Data\bin\Debug\net10.0\Domain.pdb
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.csproj.AssemblyReference.cache
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.AssemblyInfoInputs.cache
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.AssemblyInfo.cs
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.csproj.CoreCompileInputs.cache
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.csproj.Up2Date
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.dll
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\refint\Data.dll
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.pdb
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\Data.genruntimeconfig.cache
+D:\Documents\Net_proyectos\MyApp\Data\obj\Debug\net10.0\ref\Data.dll
