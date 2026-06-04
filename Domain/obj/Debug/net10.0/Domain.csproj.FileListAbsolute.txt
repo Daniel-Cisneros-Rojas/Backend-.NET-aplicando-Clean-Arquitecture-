@@ -1,0 +1,11 @@
+D:\Documents\Net_proyectos\MyApp\Domain\bin\Debug\net10.0\Domain.deps.json
+D:\Documents\Net_proyectos\MyApp\Domain\bin\Debug\net10.0\Domain.dll
+D:\Documents\Net_proyectos\MyApp\Domain\bin\Debug\net10.0\Domain.pdb
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.dll
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\refint\Domain.dll
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\Domain.pdb
+D:\Documents\Net_proyectos\MyApp\Domain\obj\Debug\net10.0\ref\Domain.dll
