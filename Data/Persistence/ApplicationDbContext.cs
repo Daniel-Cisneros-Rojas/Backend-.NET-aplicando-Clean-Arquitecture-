@@ -60,7 +60,7 @@ namespace Data.Persistence
 
                 entity.Property(e => e.EntryTime).IsRequired();
 
-                entity.Property(e => e.ExitTime).IsRequired();
+                entity.Property(e => e.ExitTime).IsRequired(false);
 
                 entity.Ignore(e => e.isActive);
 
