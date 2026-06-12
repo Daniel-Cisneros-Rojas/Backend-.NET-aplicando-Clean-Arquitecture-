@@ -1,4 +1,5 @@
 using Application.UseCases.Persons;
+using Application.UseCases.Visits;
 using Data;
 using Data.Repositories;
 using Domain;
@@ -35,6 +36,13 @@ builder.Services.AddScoped<UpdatePersonUseCase>();
 builder.Services.AddScoped<GetAllPersonsUseCase>();
 builder.Services.AddScoped<GetPersonByCodeUseCase>();
 
+//los metodos de visit
+builder.Services.AddScoped<GetActiveVisitsUseCase>();
+builder.Services.AddScoped<GetAllVisitsUseCase>();
+builder.Services.AddScoped<GetVisitsByPersonUseCase>();
+builder.Services.AddScoped<RegisterEntryUseCase>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,7 +54,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.MapPersonsEndpoints(); //es lo que se creo en Endpoints/PersonsEndpoints.cs, es lo que se encarga de mapear las rutas y los casos de uso a los endpoints, es una forma de organizar el codigo y no tener todo en el Program.cs
-
+app.MapVisitsEndpoints();
 
 app.Run();
 
