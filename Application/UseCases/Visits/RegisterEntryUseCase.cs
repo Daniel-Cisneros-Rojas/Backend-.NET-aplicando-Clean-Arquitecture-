@@ -1,10 +1,59 @@
-﻿using System;
+﻿using Application.DTOs.Visit;
+using Domain;
+using Domain.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Application.UseCases.Visits
 {
-    internal class RegisterEntryUseCase
+    public class RegisterEntryUseCase
     {
+        private readonly IRepository<VisitEntity, Guid> _repository;
+        private readonly IVisitRepository<VisitEntity> _visitRepository;
+        private readonly ICodeRepository<personEntity> _personRepository;
+
+        public RegisterEntryUseCase(IRepository<VisitEntity, Guid> repository, 
+            IVisitRepository<VisitEntity> visitRepository,
+            ICodeRepository<personEntity> personRepository)
+        {
+            _repository = repository;
+            _visitRepository = visitRepository;
+            _personRepository = personRepository;
+        }
+
+        public async Task<VisitEntity> ExecuteAsync(RegisterEntryDto dto)
+        {
+            Guid personId;
+            if (dto.PersonId.HasValue)
+            {
+                personId = dto.PersonId.Value;
+            }
+            else if(!string.IsNullOrWhiteSpace(dto.Code))
+            {
+                var person = await _personRepository.GetByCodeAsync(dto.Code);
+                if (person==null)
+                {
+                    throw new InvalidOperationException($"No se encontro una persona con el codigo {dto.Code}");
+                }
+                personId = person.Id;
+            }
+            else
+            {
+                throw new InvalidOperationException("Debe proporcionar PersonId o Code para registar la entrada");
+            }
+
+            if(await _visitRepository.HasActiveVisitAsync(personId))
+            {
+                throw new InvalidOperationException("Esta persona ya tiene una visita activa");
+            }
+
+            var visit = new VisitEntity(personId, dto.EntryTime);
+
+            await _repository.AddAsync(visit);
+            await _repository.SaveChangesAsync();
+
+            return await _repository.GetByIdAsync(visit.Id) ?? throw new InvalidOperationException("Error al recuperar visita creada");
+        }
     }
 }
