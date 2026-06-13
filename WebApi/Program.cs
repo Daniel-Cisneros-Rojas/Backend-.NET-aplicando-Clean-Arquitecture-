@@ -41,6 +41,7 @@ builder.Services.AddScoped<GetActiveVisitsUseCase>();
 builder.Services.AddScoped<GetAllVisitsUseCase>();
 builder.Services.AddScoped<GetVisitsByPersonUseCase>();
 builder.Services.AddScoped<RegisterEntryUseCase>();
+builder.Services.AddScoped<RegisterExitUseCase>();
 
 
 var app = builder.Build();

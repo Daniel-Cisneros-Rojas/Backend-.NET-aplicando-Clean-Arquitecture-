@@ -22,11 +22,11 @@ Accept: application/json
 
 ###
 
-PUT {{WebApi_HostAddress}}/api/persons/e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f
+PUT {{WebApi_HostAddress}}/api/persons/29e1ee69-9db0-4e18-8f4c-440285c4f50f
 Content-Type: application/json 
 
 {
-  "id": "e1be4df9-0a4a-44cc-9628-a2bb03c4cf2f",
+  "id": "29e1ee69-9db0-4e18-8f4c-440285c4f50f",
   "firstName": "Actualizado",
   "lastName": "Doe",
   "email": "david.rae@example.com",
@@ -41,3 +41,36 @@ Content-Type: application/json
 
   GET {{WebApi_HostAddress}}/api/persons/code/ABC123
 Accept: application/json
+
+###Visits Endpoints
+
+GET {{WebApi_HostAddress}}/api/visits
+Accept: application/json
+
+###
+
+POST {{WebApi_HostAddress}}/api/visits/entry
+Content-Type: application/json
+
+  {
+    "PersonId": "29e1ee69-9db0-4e18-8f4c-440285c4f50f",
+    "entryTime": null
+  }
+
+###
+
+  GET {{WebApi_HostAddress}}/api/visits/active
+Accept: application/json
+
+###
+GET {{WebApi_HostAddress}}/api/visits/person/29e1ee69-9db0-4e18-8f4c-440285c4f50f
+Accept: application/json
+
+###
+POST {{WebApi_HostAddress}}/api/visits/exit
+Content-Type: application/json
+
+  {
+    "visitId": "49cb1e53-1a2c-41bf-a2fd-77991fa4d2df",
+    "exitTime": null
+  }
