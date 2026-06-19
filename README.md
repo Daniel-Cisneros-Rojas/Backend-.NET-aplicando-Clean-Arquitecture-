@@ -1,4 +1,4 @@
-## Backend-.NET-aplicando-Clean-Arquitecture-
+## Backend-.NET-aplicando-Clean-Arquitecture- 
 Este proyecto implementa un backend en .NET siguiendo los principios de Clean Architecture, con Entity Framework como ORM para la persistencia de datos. La entidad principal es Persona, sobre la cual se definen operaciones CRUD: creación, actualización, búsqueda y eliminación. 
 
 Además, se incluye una implementación para registrar la entrada y salida de sesión bajo el nombre de Visits, permitiendo llevar un control de actividad de los usuarios.
