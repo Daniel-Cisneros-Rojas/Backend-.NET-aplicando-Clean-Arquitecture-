@@ -12,13 +12,14 @@ La arquitectura asegura una clara separación de capas, una persistencia eficien
 # Pruebas Creando y actualizando Personas
 
 <img width="1486" height="625" alt="image" src="https://github.com/user-attachments/assets/45cb780d-c830-49aa-b3f2-be788897dcbe" />  
-
+<br>
 
 <img width="1486" height="625" alt="image" src="https://github.com/user-attachments/assets/9b083d58-28af-46d8-bd85-14272671d754" />
 
-# Pruebas con visitas, registrando entrada y salida de sesion 
+# Pruebas con visitas, registrando entrada y salida de sesión 
 
 <img width="1486" height="625" alt="visitas_create" src="https://github.com/user-attachments/assets/fb76936c-4867-481d-9b8a-7c7d774c6e18" />  
+<br>
 
 <img width="1486" height="625" alt="exit" src="https://github.com/user-attachments/assets/79fd6da9-9b0c-4bd1-9b0b-b42e0381f127" />
 
